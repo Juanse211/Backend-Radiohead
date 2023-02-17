@@ -6,9 +6,7 @@ class ProductManager {
     this.products = []
   }
   static id = 0
-  /* METODOS */
   addProduct = async (title, description, price, thumbnail, code, stock) => {
-
     ProductManager.id++
 
     let newProduct = {
@@ -20,9 +18,7 @@ class ProductManager {
       stock,
       id: ProductManager.id
     }
-
     this.products.push(newProduct)
-
     await fs.promises.writeFile(this.path, JSON.stringify(this.products))
   }
 
