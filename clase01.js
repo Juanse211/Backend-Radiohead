@@ -35,8 +35,6 @@ class ProductManager {
     } else {
       console.log('El producto ya se encuentra agragado');
     }
-
-
   }
 
   //Método que me permite ver los productos almacenados en products
@@ -57,7 +55,6 @@ class ProductManager {
     }
     return productById;
   }
-
 }
 
 
